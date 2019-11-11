@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clearlink</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!--! If device width is between 320 and 600 px refer to mobile.css file !-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-device-width: 220px) and (max-device-width: 600px)"
+      href="css/mobile.css"
+    />
+    <!--! If device width is between 601 and 1024 px refer to tablet.css file !-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-device-width: 601px) and (max-device-width: 1024px)"
+      href="css/tablet.css"
+    />
+    <!--! If device width is greater than 1025 refer to desktop.css file !-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-device-width: 1025px)"
+      href="css/desktop.css"
+    />
+  </head>
+
+  <body>
+    <div class="nav">
+      <a href="#one">Intro</a>
+      <a href="#two">About</a>
+      <a href="#three">Rows & Columns</a>
+    </div>
+    <div class="bg-img">
+      <div class="opacity">
+        <div class="section-one" id="one">
+          <h1 class="name-title">Harlan Evans</h1>
+          <p class="intro-para">
+            My name is Harlan Evans and I am a Full-Stack Web Developer with a
+            special interest in Front-End Development and UI/UX.
+          </p>
+          <p class="intro-para">
+            When I'm not coding, I love to watch scary movies with my
+            girlfriend, play with my dog Daisy, and spend time with my famiy and
+            friends.
+          </p>
+        </div>
+
+        <div class="section-two" id="two">
+          <div class="col-one">
+            <div class="img-cont">
+              <a href="https://en.wikipedia.org/wiki/Spider" target="_blank">
+                <img src="./assets/images/Spider.gif" class="img" />
+              </a>
+            </div>
+            <h3 class="about-title">
+              Spiders.
+            </h3>
+            <p class="about-content">
+              Spiders make me nervous. This was, objectively, the cutest gif
+              of a spider I could find.
+            </p>
+            <p class="about-content">
+              I didn't look very long...
+            </p>
+          </div>
+
+          <div class="col-two">
+            <div class="img-cont">
+              <a href="https://hayleyhansenhealing.com/" target="_blank">
+                <img src="./assets/images/HansenHealing.gif" class="img" />
+              </a>
+            </div>
+            <h3 class="about-title">
+              HayleyHansenHealing.com
+            </h3>
+            <p class="about-content">
+              One of my favorite and greatest accomplishments as a developer is
+              my first freelance project HayleyHansenHealing.com.
+            </p>
+            <p class="about-content">
+              To be able to look at a project that I've created and finished on
+              my own, a site that the client is very happy with, is a very proud
+              yet humbling feeling.
+            </p>
+          </div>
+
+          <div class="col-three">
+            <div class="img-cont">
+              <a href="https://daftpunk.com/" target="_blank">
+                <img src="./assets/images/Daft.gif" class="img" />
+              </a>
+            </div>
+            <h3 class="daft-font">
+              Daft Punk
+            </h3>
+            <p class="about-content">
+              Daft Punk will always be one of my favorite music groups, style of
+              music, and inspirations.
+            </p>
+            <p class="about-content">
+              To me, Daft Punk represents honing and perfecting your craft, for
+              that reason, and the love of it alone.
+            </p>
+          </div>
+        </div>
+        <div class="section-three" id="three">
+          <h1 class="script-title">Rows & Columns</h1>
+          <p class="explain">
+            To create a multiplication table, please add numbers 1 - 6 to the
+            row and columns input fields below, then click generate.
+          </p>
+          <p class="explain">
+            If you want a different table, hit reset!
+          </p>
+          <form id="form">
+            <div class="form">
+              <div class="input-styles">
+                <label class="label">Rows</label>
+                <input
+                  type="number"
+                  name="rows"
+                  placeholder="0"
+                  value="row-value"
+                  id="row-value"
+                  max='6'
+                  onfocus="this.value=''"
+                  />
+                </div>
+                <div class="input-styles">
+                  <label class="label">Columns</label>
+                  <input
+                  type="number"
+                  name="columns"
+                  placeholder="0"
+                  value="column-value"
+                  id="column-value"
+                  max='6'
+                  onfocus="this.value=''"
+                  />
+              </div>
+            </div>
+          </form>
+          <div class="button-cont">
+            <button onclick="generate()">Generate</button>
+            <button onclick="reset()">Reset</button>
+          </div>
+          <!-- <div id='table'>
+            
+          </div> -->
+          <table id="table">
+
+            <!-- <tr id="row">
+            <td id="column"></td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
