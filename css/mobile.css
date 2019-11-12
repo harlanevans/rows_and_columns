@@ -83,6 +83,8 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   box-shadow: 0px 1px 4px black;
+  margin-bottom: 10em;
+
 }
 
 .nav a {
@@ -108,7 +110,6 @@ p {
   /* justify-content: space-evenly; */
   min-height: 100vh;
   height: 100%;
-  margin-top: 10em;
 }
 
 .name-title {
@@ -121,9 +122,17 @@ p {
 .intro-para {
   line-height: 2em;
   font-size: 3em;
-  padding: 0.5em 0em;
+  padding: 1em 0em;
   color: white;
   text-shadow: 4px 4px 8px #b1b5b8;
+}
+
+.para-cont {
+  padding: 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* height: 50vh; */
 }
 
 /*! -------------------- BG IMAGE -------------------- */
@@ -331,7 +340,7 @@ td {
   box-shadow: 0 0 20px 10px #05294D;
   background-color: #05294D;
   transition: 1.5s;
-  
+
   padding: 0.5em;
 }
 
